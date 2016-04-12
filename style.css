@@ -261,15 +261,6 @@ ol,ul {
     list-style: none;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-a img {
-    border: none;
-}
-
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {
     display: block;
 }
@@ -328,33 +319,6 @@ a:hover,a:focus {
 a:active {
     color: #89D2DC;
 }
-
-.table,.table--striped {
-    width: 100%;
-    font-size: 14px;
-    text-align: left;
-}
-
-.table thead,.table--striped thead {
-    background-color: #25274d;
-    border: 1px solid #89D2DC;
-    font-weight: 700;
-    color: #fff;
-}
-
-.table th,.table--striped th {
-    padding: 15px 20px;
-}
-
-.table td,.table--striped td {
-    padding: 10px 20px;
-}
-
-.table tbody tr,.table--striped tbody tr {
-    border: 1px solid #555;
-    border-width: 0 1px 1px;
-}
-
 
 @media (max-width: 767px) {
     .holder {
@@ -492,13 +456,6 @@ html,body {
     }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min--moz-device-pixel-ratio: 2),only screen and (-o-min-device-pixel-ratio: 2 / 1),only screen and (min-device-pixel-ratio: 2),only screen and (min-resolution: 192dpi),only screen and (min-resolution: 2dppx) {
-    #body-wrap {
-        background-image: url(https://media.blueapron.com/assets/shared/blue-linen@2x-5c304b85fe088e23450eeeef8f748246.png);
-        background-size: 200px 200px;
-    }
-}
-
 #header-main {
     font-family: "Dosis",sans-serif;
     background-color: #fff;
@@ -543,14 +500,6 @@ html,body {
     width: 105px;
 }
 
-#logo a,#logo img {
-    display: block;
-}
-
-#logo img {
-    max-width: 100%;
-}
-
 @media (min-width: 768px) and (max-width: 961px) {
     #logo {
         width: 95px;
@@ -566,11 +515,6 @@ html,body {
         left: 50%;
         top: 0;
         margin-left: -40px;
-    }
-
-    #logo img {
-        width: 80px;
-        height: auto;
     }
 }
 
@@ -625,25 +569,6 @@ html,body {
     .header-nav a {
         font-size: 16px;
     }
-}
-
-.new-pill {
-    background-color: #DC6E2D;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
-    padding: 4px 6px 2px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    position: relative;
-    top: -3px;
-    margin-left: 2px;
-    display: inline-block;
-    line-height: 18px;
 }
 
 #ie7 .new-pill,#ie8 .new-pill {
@@ -731,54 +656,8 @@ html,body {
     text-transform: uppercase;
 }
 
-.txt-center {
-    text-align: center;
-}
-
-.txt-left {
-    text-align: left;
-}
-
-.txt-right {
-    text-align: right;
-}
-
 .pull-left {
     float: left;
-}
-
-.pull-right {
-    float: right;
-}
-
-.mobile-only,.small-only {
-    display: none;
-}
-
-@media (max-width: 767px) {
-    .small-hide {
-        display: none;
-    }
-
-    .mobile-only {
-        display: block;
-    }
-
-    .desktop-only {
-        display: none !important;
-    }
-}
-
-@media (max-width: 961px) {
-    .small-only {
-        display: block;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 961px) {
-    .desktop-only {
-        display: none !important;
-    }
 }
 
 .learn-info-list {
@@ -882,19 +761,11 @@ html,body {
     .rec-basics-hldr {
         min-height: 200px;
     }
-
-    .rec-basics-hldr .rec-splash-img {
-        top: 0;
-    }
 }
 
 @media (min-height: 1060px) and (min-width: 1200px) {
     .rec-basics-hldr {
         min-height: 200px;
-    }
-
-    .rec-basics-hldr .rec-splash-img {
-        top: 0;
     }
 }
 
@@ -910,28 +781,6 @@ html,body {
         margin: 0;
         border-bottom: 1px solid #89D2DC;
     }
-}
-
-.rec-area-title {
-    padding: 20px;
-    border-bottom: 1px solid #e6e6e6;
-}
-
-.rec-area-title h2 {
-    font-size: 30px;
-    margin: 0;
-}
-
-.rec-area-content {
-    position: relative;
-    padding: 20px;
-    *zoom: 1;
-}
-
-.rec-area-content:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .icon {
