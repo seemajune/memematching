@@ -36,7 +36,7 @@ Game.prototype.play = function() {
   this.memeData;
   var _this = this;
 
-  this.startTimer();
+  //this.startTimer();
 
   $.getJSON('https://api.imgflip.com/get_memes', function (data) {
       _this.memeData = [];
@@ -149,7 +149,7 @@ Game.prototype.play = function() {
     e.preventDefault();
 
     $(e.currentTarget).children().closest('.meme-name').attr('draggable', 'false');
-    $(e.currentTarget).children().closest('.meme-name').css({position: 'absolute', bottom: '-10px', left: '5%'});
+    $(e.currentTarget).children().closest('.meme-name').css({position: 'absolute', top: '10px'});
     
     _this.droppedCount++;
     _this.droppedCount === _this.$memeNames.length ? _this.checkForWin() : false; 
