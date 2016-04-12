@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]> <html id='ie7' class='ie' xmlns:og='http://ogp.me/ns#' xmlns='http://www.w3.org/1999/xhtml'> <![endif]-->
+<!--[if IE 8]> <html id='ie8' class='ie' xmlns:og='http://ogp.me/ns#' xmlns='http://www.w3.org/1999/xhtml'> <![endif]-->
+<!--[if IE 9]> <html id='ie9' class='ie' xmlns:og='http://ogp.me/ns#' xmlns='http://www.w3.org/1999/xhtml'> <![endif]-->
+<!--[if gt IE 9]> <html id='ie10' class='ie' xmlns:og='http://ogp.me/ns#' xmlns='http://www.w3.org/1999/xhtml'> <![endif]-->
+<!--[if !IE]><!-->
+<html xmlns:og='http://ogp.me/ns#' xmlns='http://www.w3.org/1999/xhtml'>
+<!--<![endif]-->
+
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+
+<title>Meme Matching Game</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
+<script src="main.js"></script>
+</head>
+<body class="recipe-page">
+<div id="body-wrap">
+        <header id="header-main">
+            <div class="container">
+                <div class="pull-left" id="logo">
+                    <h3>MemeMatch!</h3>
+                </div>
+                <div class="nav-collapse collapse">
+                    <nav id="main-nav">
+                        <ul class="nav nav-pills header-nav">
+                            <li>
+                               <p><i class="fa fa-clock-o"></i><span id="counter"></span></p>
+                            </li>
+                            <li>
+                                <p>Points:</p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="header-spacer"></div>
+    <section class="learn-section learn-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-4"></div>
+                <div class="col-xs-12 col-md-4"></div>
+                <div class="col-xs-12 col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-4"></div>
+                <div class="col-xs-12 col-md-4"></div>
+                <div class="col-xs-12 col-md-4"></div>
+            </div>
+        </div>
+    </section>
+    <div class="win"><i class="fa-smile-o fa-lg"></i></div>
+    <div class="lost"><i class="fa-frown-o fa-lg"></i></div>
+    <div class="play-again"><i class="fa-repeat fa-lg"></i></div>
+    <div class="recipe-page-main" id="main" role="main">
+        <section class="section-rec-basics">
+            <div class="container">
+                <div class="holder rec-basics-hldr">
+                    <div class="title-hldr">
+                        <div class="title-area" itemprop="name">
+                            <h1 class="main-title">drag a title card:</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <div class="meme-name" draggable="true"> </div>
+                            <div class="meme-placeholder" draggable="false"></div>                           
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="meme-name" draggable="true"></div>
+                            <div class="meme-placeholder" draggable="false"></div>  
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="meme-name" draggable="true"></div>
+                            <div class="meme-placeholder" draggable="false"></div>  
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <div class="meme-name" draggable="true"></div>
+                            <div class="meme-placeholder" draggable="false"></div>  
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="meme-name" draggable="true"></div>
+                            <div class="meme-placeholder" draggable="false"></div>  
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="meme-name" draggable="true"></div>
+                            <div class="meme-placeholder" draggable="false"></div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
