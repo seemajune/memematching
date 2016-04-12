@@ -36,7 +36,7 @@ Game.prototype.play = function() {
   this.memeData;
   var _this = this;
 
-  //this.startTimer();
+  this.startTimer();
 
   $.getJSON('https://api.imgflip.com/get_memes', function (data) {
       _this.memeData = [];
@@ -49,16 +49,16 @@ Game.prototype.play = function() {
           case "Grumpy Cat":
             _this.memeData.push(data["data"]["memes"][i]);
           break;
-          case "Oprah You Get A":
+          case "Star Wars Yoda":
             _this.memeData.push(data["data"]["memes"][i]);
           break;
-          case "Skeptical Baby":
+          case "Cute Cat":
             _this.memeData.push(data["data"]["memes"][i]);
           break;
-          case "Scumbag Steve":
+          case "Confession Bear":
             _this.memeData.push(data["data"]["memes"][i]);
           break;
-          case "Gollum":
+          case "Archer":
             _this.memeData.push(data["data"]["memes"][i]);
           break;
         }
@@ -142,14 +142,14 @@ Game.prototype.play = function() {
 
   this.$outerImageDivs.on("dragenter", function(e) {
     e.preventDefault();
-    e.currentTarget.style.border = "3px solid #313567";
+    e.currentTarget.style.border = "3px solid #1B5299";
   });
 
   this.$outerImageDivs.on("dragend", function(e) {
     e.preventDefault();
 
     $(e.currentTarget).children().closest('.meme-name').attr('draggable', 'false');
-    $(e.currentTarget).children().closest('.meme-name').css({position: 'absolute', top: '10%'});
+    $(e.currentTarget).children().closest('.meme-name').css({position: 'absolute', top: '60%'});
     
     _this.droppedCount++;
     _this.droppedCount === _this.$memeNames.length ? _this.checkForWin() : false; 
@@ -177,7 +177,7 @@ Game.prototype.checkForWin = function(){
       _this.hasWon = false;
       $('.recipe-page-main').addClass('overlay');
       $('section.learn-section').addClass('overlay');
-      $('.row').fadeOut(1000, "swing");
+      $('.container').fadeOut();
       $('.lost').fadeIn(1000);
       $('.lost').fadeOut(1000);
       $('.play-again').fadeIn(9000);
@@ -188,7 +188,7 @@ Game.prototype.checkForWin = function(){
   if(_this.hasWon){
     $('.recipe-page-main').addClass('overlay');
     $('section.learn-section').addClass('overlay');
-    $('.row').fadeOut(3000, "swing");
+    $('.container').fadeOut();
     $('.win').fadeIn(2000);
     $('.win').fadeOut(2000);
     $('.play-again').fadeIn(9000);
