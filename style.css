@@ -4,7 +4,7 @@
 
 
 .learn-section .col-xs-12.col-md-4 img {
-    height: 200px;
+    height: 300px;
     width: 400px;
 }
 
@@ -781,11 +781,6 @@ button[disabled] {
 
 .table--striped tbody tr:nth-child(odd) {
     background-color: #fafafc;
-}
-
-.holder {
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -10430,7 +10425,7 @@ body.cancel-subscription #main .survey-questions textarea {
 
 @media (min-height: 1060px) and (min-width: 1200px) {
     .rec-basics-hldr {
-        min-height: 710px;
+        min-height: 200px;
     }
 
     .rec-basics-hldr .rec-splash-img {

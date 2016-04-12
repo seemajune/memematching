@@ -40,10 +40,28 @@ Game.prototype.play = function() {
 
   $.getJSON('https://api.imgflip.com/get_memes', function (data) {
       _this.memeData = [];
-      console.log(_this.memeData);
 
-      for(var i=0; i<_this.$outerImageDivs.length; i++) {
-        _this.memeData.push(data["data"]["memes"][i]);
+      for(var i=0; i<data["data"]["memes"].length; i++) {
+        switch(data["data"]["memes"][i]["name"]){
+          case "Doge":
+            _this.memeData.push(data["data"]["memes"][i]);
+          break;
+          case "Grumpy Cat":
+            _this.memeData.push(data["data"]["memes"][i]);
+          break;
+          case "Oprah You Get A":
+            _this.memeData.push(data["data"]["memes"][i]);
+          break;
+          case "Skeptical Baby":
+            _this.memeData.push(data["data"]["memes"][i]);
+          break;
+          case "Scumbag Steve":
+            _this.memeData.push(data["data"]["memes"][i]);
+          break;
+          case "Gollum":
+            _this.memeData.push(data["data"]["memes"][i]);
+          break;
+        }
       }
 
       _this.memeData = _this.shuffle(_this.memeData);
