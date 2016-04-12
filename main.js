@@ -149,7 +149,7 @@ Game.prototype.play = function() {
     e.preventDefault();
 
     $(e.currentTarget).children().closest('.meme-name').attr('draggable', 'false');
-    $(e.currentTarget).children().closest('.meme-name').css({position: 'absolute', top: '10px'});
+    $(e.currentTarget).children().closest('.meme-name').css({position: 'absolute', top: '10%'});
     
     _this.droppedCount++;
     _this.droppedCount === _this.$memeNames.length ? _this.checkForWin() : false; 

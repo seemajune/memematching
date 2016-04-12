@@ -2,6 +2,9 @@
 
 @import url(https://fonts.googleapis.com/css?family=Dosis);
 
+.learn-section .col-xs-12.col-md-4 {
+    position: relative;
+}
 
 .learn-section .col-xs-12.col-md-4 img {
     height: 300px;
