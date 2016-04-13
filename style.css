@@ -108,6 +108,7 @@
 
 .row {
     padding-left: 2%;
+    margin-bottom: 5px;
 }
 
 .win, .lost, .play-again {
