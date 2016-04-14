@@ -310,6 +310,22 @@ a:active {
     color: #89D2DC;
 }
 
+@media (max-width: 767px) {
+    .holder {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: 0 0 0 transparent;
+        -moz-box-shadow: 0 0 0 transparent;
+        box-shadow: 0 0 0 transparent;
+        margin-top: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+}
+
 .line {
     display: block;
     border-top: 1px solid #89D2DC;
@@ -333,20 +349,6 @@ hr {
 
 @media (max-width: 768px) {
     .container {
-        overflow: hidden;
-    }
-
-    .holder {
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
-        border-radius: 0;
-        -webkit-box-shadow: 0 0 0 transparent;
-        -moz-box-shadow: 0 0 0 transparent;
-        box-shadow: 0 0 0 transparent;
-        margin-top: 0;
-        margin-bottom: 0;
         overflow: hidden;
     }
 }
@@ -421,6 +423,12 @@ html,body {
     height: 100%;
 }
 
+@media (max-width: 767px) {
+    #body-wrap {
+        margin: 0 auto -583px;
+    }
+}
+
 #header-main {
     font-family: "Dosis",sans-serif;
     background-color: #fff;
@@ -438,11 +446,62 @@ html,body {
     border-bottom: 1px solid #bbb;
 }
 
+@media (max-width: 767px) {
+    #header-main {
+        min-height: 40px;
+        padding: 0;
+        position: static;
+        border-bottom: 1px solid #89D2DC;
+    }
+}
+
+.logged-in,.user-canceled {
+    display: none !important;
+}
+
+#header-spacer {
+    height: 65px;
+}
+
+@media (max-width: 767px) {
+    #header-spacer {
+        display: none;
+    }
+}
+
+#logo {
+    width: 105px;
+}
+
+@media (min-width: 768px) and (max-width: 961px) {
+    #logo {
+        width: 95px;
+    }
+}
+
+@media (max-width: 767px) {
+    #logo {
+        padding: 8px 0;
+        float: right;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -40px;
+    }
+}
+
 #main-nav {
     float: left;
     height: 30px;
     padding: 9px 0 10px;
     margin-left: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 961px) {
+    #main-nav {
+        margin-left: 15px;
+    }
 }
 
 .header-nav {
@@ -475,46 +534,22 @@ html,body {
     border-color: #89D2DC;
 }
 
-.logged-in,.user-canceled {
-    display: none !important;
-}
+@media (min-width: 768px) and (max-width: 961px) {
+    .header-nav>li {
+        padding: 0 10px;
+    }
 
-#header-spacer {
-    height: 65px;
-}
-
-@media (max-width: 767px) {
-    #header-spacer {
-        display: none;
+    .header-nav a {
+        font-size: 16px;
     }
 }
 
-#logo {
-    width: 105px;
+#ie7 .new-pill,#ie8 .new-pill {
+    behavior: url(/assets/PIE.htc);
+    position: relative;
 }
 
 @media (max-width: 767px) {
-    #logo {
-        padding: 8px 0;
-        float: right;
-        overflow: hidden;
-        position: absolute;
-        left: 50%;
-        top: 0;
-        margin-left: -40px;
-    }
-
-    #header-main {
-        min-height: 40px;
-        padding: 0;
-        position: static;
-        border-bottom: 1px solid #89D2DC;
-    }
-
-    #body-wrap {
-        margin: 0 auto -583px;
-    }
-
     .nav-collapse,.nav-collapse.collapse {
         background-color: #ededed;
         height: 0;
@@ -578,30 +613,6 @@ html,body {
         border-color: #89D2DC;
     }
 }
-
-@media (min-width: 768px) and (max-width: 961px) {
-    #logo {
-        width: 95px;
-    }
-
-    #main-nav {
-        margin-left: 15px;
-    }
-
-    .header-nav>li {
-        padding: 0 10px;
-    }
-
-    .header-nav a {
-        font-size: 16px;
-    }
-}
-
-/*
-#ie7 .new-pill,#ie8 .new-pill {
-    behavior: url(/assets/PIE.htc);
-    position: relative;
-}*/
 
 .content-wrap {
     -webkit-transition: -webkit-transform 400ms ease-out;
