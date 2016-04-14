@@ -2,10 +2,29 @@
 
 @import url(https://fonts.googleapis.com/css?family=Dosis);
 
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: "Dosis",sans-serif;
+}
+
+html {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {
+    display: block;
+}
 #logo h3 {
     padding: 1% 0 0 75%;
     font-size: 3em;
-
 }
 
 .check-overlay:before {
@@ -245,27 +264,6 @@
     float: left;
 }
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-html {
-    line-height: 1;
-}
-
-ul {
-    list-style: none;
-}
-
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {
-    display: block;
-}
-
 :focus {
     outline: 0;
 }
@@ -273,13 +271,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,su
 h1,h2,h3,h4,h5,h6 {
     font-weight: 600;
     line-height: 1.2;
-    font-family: "Dosis",sans-serif;
     color: #89D2DC;
 }
 
 h6  {
     font-size: 12px;
-    font-family: "Archer SSm A","Archer SSm B",Georgia,"Georgia",serif;
     font-style: italic;
     font-weight: 300;
     color: #888;
@@ -358,25 +354,11 @@ hr {
     width: 97.4359%;
 }
 
-#ie7 .col-md-4 {
-    float: left;
-}
-
-#ie7 .col-md-1,#ie8 .col-md-1 {
-    width: 5.76923%;
-}
-
-#ie7 .col-md-4,#ie8 .col-md-4 {
-    width: 30.76923%;
-}
-
-
 html,body {
     height: 100%;
 }
 
 #header-main {
-    font-family: "Dosis",sans-serif;
     background-color: #fff;
     min-height: 49px;
     padding: 8px 0;
@@ -386,10 +368,6 @@ html,body {
     right: 0;
     border-bottom: 1px solid #89D2DC;
     border-top: 4px solid #eee;
-}
-
-#ie7 #header-main,#ie8 #header-main {
-    border-bottom: 1px solid #bbb;
 }
 
 .logged-in,.user-canceled {
@@ -441,11 +419,6 @@ html,body {
     border-color: #89D2DC;
 }
 
-#ie7 .new-pill,#ie8 .new-pill {
-    behavior: url(/assets/PIE.htc);
-    position: relative;
-}
-
 .content-wrap {
     -webkit-transition: -webkit-transform 400ms ease-out;
     -moz-transition: -moz-transform 400ms ease-out;
@@ -474,12 +447,6 @@ html,body {
     *zoom: 1;
 }
 
-#ie7 .recipe-page .title-hldr,#ie8 .recipe-page .title-hldr {
-    background: transparent;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D989D2DC',EndColorStr='#D989D2DC');
-    zoom: 1;
-}
-
 .recipe-page .main-title {
     font-size: 26px;
     color: #fff;
@@ -488,7 +455,6 @@ html,body {
 }
 
 .recipe-page .sub-title {
-    font-family: "Archer SSm A","Archer SSm B",Georgia,"Georgia",serif;
     font-weight: 700;
     font-style: italic;
     line-height: 1.5em;
@@ -596,14 +562,8 @@ body>img {
         display: none;
     }
 
-    #logo {
-        padding: 8px 0;
-        float: right;
-        overflow: hidden;
-        position: absolute;
-        left: 50%;
-        top: 0;
-        margin-left: -40px;
+    #logo h3 {
+        font-size: 16px;
     }
 
     .nav-collapse,.nav-collapse.collapse {
@@ -647,14 +607,6 @@ body>img {
 
     #main-nav .nav>li.basket-hldr.show {
         display: none;
-    }
-
-    #main-nav .nav a {
-        border-bottom: 1px solid #ccc;
-        font-size: 28px;
-        height: 34px;
-        line-height: 34px;
-        padding: 5px 0;
     }
 
     #main-nav .nav .nav_shop {
@@ -706,6 +658,10 @@ body>img {
 
     #logo {
         width: 95px;
+    }
+
+    #logo h3 {
+        font-size: 14px;
     }
 
     .header-nav>li {
