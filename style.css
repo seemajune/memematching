@@ -310,22 +310,6 @@ a:active {
     color: #89D2DC;
 }
 
-@media (max-width: 767px) {
-    .holder {
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
-        border-radius: 0;
-        -webkit-box-shadow: 0 0 0 transparent;
-        -moz-box-shadow: 0 0 0 transparent;
-        box-shadow: 0 0 0 transparent;
-        margin-top: 0;
-        margin-bottom: 0;
-        overflow: hidden;
-    }
-}
-
 .line {
     display: block;
     border-top: 1px solid #89D2DC;
@@ -347,34 +331,10 @@ hr {
     clear: both;
 }
 
-@media (max-width: 768px) {
-    .container {
-        overflow: hidden;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (min-width: 962px) {
-    .container {
-        width: 940px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-
-#ie7 .container,#ie8 .container {
+/*#ie7 .container,#ie8 .container {
     width: 940px;
 }
-
+*/
 .row,.row-new {
     margin-left: -1.28205%;
     margin-right: -1.28205%;
@@ -398,14 +358,6 @@ hr {
     width: 97.4359%;
 }
 
-
-@media (min-width: 962px) {
-    .col-md-4 {
-        float: left;
-        width: 28%;
-    }
-}
-
 #ie7 .col-md-4 {
     float: left;
 }
@@ -421,12 +373,6 @@ hr {
 
 html,body {
     height: 100%;
-}
-
-@media (max-width: 767px) {
-    #body-wrap {
-        margin: 0 auto -583px;
-    }
 }
 
 #header-main {
@@ -446,15 +392,6 @@ html,body {
     border-bottom: 1px solid #bbb;
 }
 
-@media (max-width: 767px) {
-    #header-main {
-        min-height: 40px;
-        padding: 0;
-        position: static;
-        border-bottom: 1px solid #89D2DC;
-    }
-}
-
 .logged-in,.user-canceled {
     display: none !important;
 }
@@ -463,32 +400,8 @@ html,body {
     height: 65px;
 }
 
-@media (max-width: 767px) {
-    #header-spacer {
-        display: none;
-    }
-}
-
 #logo {
     width: 105px;
-}
-
-@media (min-width: 768px) and (max-width: 961px) {
-    #logo {
-        width: 95px;
-    }
-}
-
-@media (max-width: 767px) {
-    #logo {
-        padding: 8px 0;
-        float: right;
-        overflow: hidden;
-        position: absolute;
-        left: 50%;
-        top: 0;
-        margin-left: -40px;
-    }
 }
 
 #main-nav {
@@ -496,12 +409,6 @@ html,body {
     height: 30px;
     padding: 9px 0 10px;
     margin-left: 16px;
-}
-
-@media (min-width: 768px) and (max-width: 961px) {
-    #main-nav {
-        margin-left: 15px;
-    }
 }
 
 .header-nav {
@@ -534,22 +441,171 @@ html,body {
     border-color: #89D2DC;
 }
 
-@media (min-width: 768px) and (max-width: 961px) {
-    .header-nav>li {
-        padding: 0 10px;
-    }
-
-    .header-nav a {
-        font-size: 16px;
-    }
-}
-
 #ie7 .new-pill,#ie8 .new-pill {
     behavior: url(/assets/PIE.htc);
     position: relative;
 }
 
+.content-wrap {
+    -webkit-transition: -webkit-transform 400ms ease-out;
+    -moz-transition: -moz-transform 400ms ease-out;
+    -o-transition: -o-transform 400ms ease-out;
+    transition: transform 400ms ease-out;
+    position: relative;
+    background-color: #fff;
+    background-color: #fff;
+    height: 100%;
+}
+
+.txt-caps {
+    text-transform: uppercase;
+}
+
+.pull-left {
+    float: left;
+}
+
+.recipe-page .title-hldr {
+    background-color: #89D2DC;
+    z-index: 2;
+    padding: 12px 20px;
+    position: relative;
+    overflow: hidden;
+    *zoom: 1;
+}
+
+#ie7 .recipe-page .title-hldr,#ie8 .recipe-page .title-hldr {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D989D2DC',EndColorStr='#D989D2DC');
+    zoom: 1;
+}
+
+.recipe-page .main-title {
+    font-size: 26px;
+    color: #fff;
+    margin: 0 0 1px;
+    text-align: center;
+}
+
+.recipe-page .sub-title {
+    font-family: "Archer SSm A","Archer SSm B",Georgia,"Georgia",serif;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.5em;
+    font-size: 18px;
+    color: #f0f0f0;
+    margin: 0;
+}
+
+.section-rec-basics {
+    padding-top: 20px;
+}
+
+.section-rec-basics .holder {
+    overflow: hidden;
+    position: relative;
+}
+
+.rec-basics-hldr {
+    min-height: 200px;
+}
+
+.recipe-page .holder {
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 95%;
+}
+
+.icon {
+    font-family: "FontAwesome";
+}
+
+body>img {
+    display: none;
+}
+
+.learn-section .col-xs-12.col-md-4 {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    background-color: #000;
+    margin-left: 5%;
+}
+
+.learn-section .col-xs-12.col-md-4 img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.win, .lost, .play-again {
+    color: #fff;
+    background-color: #89D2DC;
+    font-size: 100px;
+    font-family: FontAwesome;
+    z-index:9999999999999999;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+.overlay {
+    position:fixed;
+    z-index:9999999;
+    width:100%;
+    height:100%;
+    background-color: #89D2DC;
+}
+
 @media (max-width: 767px) {
+    .holder {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: 0 0 0 transparent;
+        -moz-box-shadow: 0 0 0 transparent;
+        box-shadow: 0 0 0 transparent;
+        margin-top: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+
+    #body-wrap {
+        margin: 0 auto -583px;
+    }
+
+    #header-main {
+        min-height: 40px;
+        padding: 0;
+        position: static;
+        border-bottom: 1px solid #89D2DC;
+    }
+
+    #header-spacer {
+        display: none;
+    }
+
+    #logo {
+        padding: 8px 0;
+        float: right;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -40px;
+    }
+
     .nav-collapse,.nav-collapse.collapse {
         background-color: #ededed;
         height: 0;
@@ -612,49 +668,7 @@ html,body {
     #main-nav .nav.current {
         border-color: #89D2DC;
     }
-}
 
-.content-wrap {
-    -webkit-transition: -webkit-transform 400ms ease-out;
-    -moz-transition: -moz-transform 400ms ease-out;
-    -o-transition: -o-transform 400ms ease-out;
-    transition: transform 400ms ease-out;
-    position: relative;
-    background-color: #fff;
-    background-color: #fff;
-    height: 100%;
-}
-
-.txt-caps {
-    text-transform: uppercase;
-}
-
-.pull-left {
-    float: left;
-}
-
-.recipe-page .title-hldr {
-    background-color: #89D2DC;
-    z-index: 2;
-    padding: 12px 20px;
-    position: relative;
-    overflow: hidden;
-    *zoom: 1;
-}
-
-#ie7 .recipe-page .title-hldr,#ie8 .recipe-page .title-hldr {
-    background: transparent;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D989D2DC',EndColorStr='#D989D2DC');
-    zoom: 1;
-}
-
-@media (min-width: 1200px) {
-    .recipe-page .title-hldr {
-        background-color: #89D2DC;
-    }
-}
-
-@media (max-width: 767px) {
     .recipe-page .title-hldr {
         padding: 20px;
         background-color: #fff;
@@ -665,60 +679,41 @@ html,body {
         font-size: 28px;
         color: #89D2DC;
     }
-}
 
-@media (max-width: 767px) {
     .recipe-page .title-area {
         float: none;
         width: auto;
     }
-}
 
-.recipe-page .main-title {
-    font-size: 26px;
-    color: #fff;
-    margin: 0 0 1px;
-    text-align: center;
-}
-
-.recipe-page .sub-title {
-    font-family: "Archer SSm A","Archer SSm B",Georgia,"Georgia",serif;
-    font-weight: 700;
-    font-style: italic;
-    line-height: 1.5em;
-    font-size: 18px;
-    color: #f0f0f0;
-    margin: 0;
-}
-
-.section-rec-basics {
-    padding-top: 20px;
-}
-
-@media (max-width: 767px) {
     .section-rec-basics {
         padding-top: 0;
     }
-}
 
-.section-rec-basics .holder {
-    overflow: hidden;
-    position: relative;
-}
-
-.rec-basics-hldr {
-    min-height: 200px;
-}
-
-@media (min-width: 1200px) {
     .rec-basics-hldr {
-        min-height: 200px;
+        min-height: 0;
+    }
+
+    .recipe-page .holder {
+        margin: 0;
+        border-bottom: 1px solid #89D2DC;
     }
 }
 
-@media (max-width: 767px) {
-    .rec-basics-hldr {
-        min-height: 0;
+@media (min-width: 768px) and (max-width: 961px) {
+    #main-nav {
+        margin-left: 15px;
+    }
+
+    #logo {
+        width: 95px;
+    }
+
+    .header-nav>li {
+        padding: 0 10px;
+    }
+
+    .header-nav a {
+        font-size: 16px;
     }
 }
 
@@ -726,74 +721,46 @@ html,body {
     .rec-basics-hldr {
         min-height: 200px;
     }
-}
 
-@media (min-height: 1060px) and (min-width: 1200px) {
     .rec-basics-hldr {
         min-height: 200px;
     }
 }
 
-.recipe-page .holder {
-    margin-top: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 95%;
-}
-
-@media (max-width: 767px) {
-    .recipe-page .holder {
-        margin: 0;
-        border-bottom: 1px solid #89D2DC;
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
     }
 }
 
-.icon {
-    font-family: "FontAwesome";
+@media (max-width: 768px) {
+    .container {
+        overflow: hidden;
+    }
 }
 
-body>img {
-    display: none;
+@media (min-width: 962px) {
+    .container {
+        width: 940px;
+    }
+
+    .col-md-4 {
+        float: left;
+        width: 28%;
+    }
 }
 
-.learn-section .col-xs-12.col-md-4 {
-    position: relative;
-    height: 200px;
-    width: 300px;
-    background-color: #000;
-    margin-left: 5%;
-}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
 
-.learn-section .col-xs-12.col-md-4 img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
+    .recipe-page .title-hldr {
+        background-color: #89D2DC;
+    }
 
-.win, .lost, .play-again {
-    color: #fff;
-    background-color: #89D2DC;
-    font-size: 100px;
-    font-family: FontAwesome;
-    z-index:9999999999999999;
-    text-align: left;
-    position: absolute;
-    top: 40%;
-    left: 45%;
-}
-
-.overlay {
-    position:fixed;
-    z-index:9999999;
-    width:100%;
-    height:100%;
-    background-color: #89D2DC;
+    .rec-basics-hldr {
+        min-height: 200px;
+    }
 }
 
